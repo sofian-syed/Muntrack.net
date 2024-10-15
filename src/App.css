@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* Info here: https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
+  box-sizing: border-box;
+}
+
+body { 
+	background: #222;
+	color: #fff;
+	font-family: arial, sans-serif;
+	font-size: 12px;
+  overflow: hidden;
+}
+
+a {
+  color: #d9d9d9;
+}
+
+.title {
+  background: #0b3e6f url(assets/images/ui-bg_diagonals-thick_15_0b3e6f_40x40.png);
+  border-bottom: 1px solid #000;
+  line-height: normal;
+  font-size: 60px;
+  font-weight: bold;
+  height: 85px;
+  padding: 7px 15px;
+}
+
+.screen{
+  margin: 20px;
+}
+
+.left-side {
+  /* Float is the property that allows the content to be positioned in one side of the screen and allows other elements to be positioned on the right */
+  /* Info here: https://developer.mozilla.org/en-US/docs/Web/CSS/float */
+	float: left;
+	margin: 0;
+	width: 375px;
+}
+
+.right-side{
+  margin-left: 400px;
+}
+
+.list-group-item {
+  box-sizing: content-box;
+  border: none;
+  font-size: 26px;
+  line-height: 39px;
+  width: 45%;
+  padding: 0;
+  background: transparent;
+  color: #fff;
+  text-align: left;
+}
+
+.list-group-title {
+  float: left;
+  font-weight: bold;
+  text-align: right;
+  padding-right: 6%;
+}
+
+.widget {
+  background: #111 url(assets/images/ui-bg_gloss-wave_20_111111_500x100.png) repeat-x;
+  border: 1px solid #000;
+  border-radius: 4px;
+  font-size: 36px;
+  margin: 0 0 15px;
+  padding: 5px;
+}
+
+.widget-heading{
+  background: url(assets/images/ui-bg_dots-medium_15_0b3e6f_4x4.png);
+  line-height: normal;
+  font-size: 30px;
+	border-radius: 4px;
+	margin: 2px 2px 8px;
+	padding: 5px;
+	text-align: center;
+  /* Info here: https://developer.mozilla.org/en-US/docs/Web/CSS/display */
+  display: block;
+  font-weight: bold;
+  height: 44px;
+}
+
+.speakers-heading{
+  font-size: 40px;
+  line-height: normal;
+  height: 56px;
+}
+.speakers-list{
+  height: 450px;
+  padding: 0;
+  overflow: auto;
+  margin: 0;
+  list-style: none;
+  line-height: normal;
+}
+
+.list-1{ 
+  column-count: 2;
+}
+
+.list-2{
+  margin: 0;
+  text-align: center;
+}
+.voting-list {
+  width: 50%;
+  float: left;
+  list-style: none;
+  padding: 0;
+}
+
+.speaker{
+  font-size: 36px;
+  height: 41.600px;
+}
+
+.controls{
+  display: block;
+  background: #191919;
+  bottom: 0;
+  font-family: monospace;
+  height: 43px;
+  padding: 3px 3px 0;
+  position: absolute;
+  width: 100%;
+  z-index: 50;
+}
+
+.console{
+  color: #fff;
+  height: 20px;
+  width: 100%;
+}
+
+.command{
+  background: #191919;
+  border: none;
+  bottom: 3px;
+  color: #fff;
+  font-family: monospace;
+  font-size: 12px;
+  position: absolute;
+  width: 100%;
+}
+
+.link{
+  color: #fff;
+}	
+.bold-line{
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.current-speaker{
+  color: #75abff;
+  font-weight: bold;
+}
+
+.past-speaker{
+  text-decoration: line-through;
+}
+
+
+.ui-dialog{
+  display: block;
+  z-index: 1000;
+  outline: 0;
+  height: auto;
+  width: 456.8px;
+  top: 110px;
+  font-size: 13.1px;
+  padding: 0.2em;
+  overflow: hidden;
+  border-radius: 4px;
+  border: 1px solid #000;
+  background: #111 url(assets/images/ui-bg_gloss-wave_20_111111_500x100.png) 50% top repeat-x;
+  color: #d9d9d9;
+}
+
+
+.ui-header{
+  display: block;
+  padding: 0.5em 1em 0.3em;
+  position: relative;
+  border-radius: 4px;
+  height: 31.18px;
+  border: 1px solid #0b3e6f;
+  background: #0b3e6f url(assets/images/ui-bg_diagonals-thick_15_0b3e6f_40x40.png) 50% 50% repeat;
+  color: #f6f6f6;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.ui-dialog-title{
+  float: left;
+  margin: 0.1em 16px 0.2em 0;
+}
+
+.ui-dialog-close{
+  position: absolute;
+  right: 0.3em;
+  top: 50%;
+  width: 22.6px;
+  height: 21.6px;
+  margin: -10px 0 0 0;
+  padding: 1px;
+  border: 1px solid #222;
+  background: #00498f url(assets/images/ui-bg_dots-small_40_00498f_2x2.png);
+  font-weight: bold;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.ui-dialog-close-icon{
+  display: block;
+  margin: 1px;
+  background-image: url(assets/images/ui-icons_ffffff_256x240.png);
+  background-position: -96px -128px;
+  width: 16px;
+  height: 16px;
+}
+
+.ui-dialog-content{
+  position: relative;
+  border: 0;
+  padding: 0.5em 13px;
+  background: none;
+  overflow: hidden;
+}
+
+.popup-overlay{
+  background-color: rgba(170, 170, 170, 0.3);
+}
+
+.explanation-p{
+  width: 424px;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+.list-group-popup{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 15.2px;
+  line-height:normal;
+  width: 420.8px;
+}
+
+.list-group-popup-title{
+  font-weight: bold;
+  width: 76px;
+  font-family: monospace;
+}
+
+.timer-popup{
+  border: 1px solid #000;
+  border-radius: 4px;
+  background: #111 url(assets/images/ui-bg_gloss-wave_20_111111_500x100.png) left top repeat-x;
+  color: #d9d9d9;
+  padding: 9.6px;
+  width: 920.8px;
+  height: 124px;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 105px  ;
+}
+
+.ontime{
+  color: #ffff00;
+}
+
+.overtime{
+  color: #ff0000;
+}
