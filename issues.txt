@@ -1,0 +1,23 @@
+In this file, I will detail various functionalities as well as associated issues that need to be fixed. 
+Press help to see all the commands. I will detail the issues by command:
+
+help - works as intended
+settitle - works as intended
+setquorum - works as intended
+settime - works as intended
+setexts - works as intended
+
+Following commands are related to the various speakers lists. 
+add - works as intended
+insert - The logic to insert is correct. However, if you notice when adding, there is an autocomplete functionality for the country name. This should be implemented at the first input when inserting (the second input is the location by number). LOW PRIORITY
+change - This command is not implemented. Please implement this so that users can first input a number for which number country to change and second input as what they want to change the country to. LOW PRIORITY.
+flip - This command takes in two inputs one at a time. Each input is a number for the country that should be swapped. This works for some cases but not for cases that include numbers towards the end of the speakers list. For exmaple, if there were 15 speakers, it would say invalid country if we put in one of the inputs as 13
+delete - works as intended
+next - crosses out the current speaker. This works for the first few but then does not work past the second speaker from my experience. Additionally, when we press next on various countries to cross them out then press switch to go to a different speakers list and add countries their, some of the countries in the new speakers list are automatically crossed out uyt each speaker list should be entirely independent of the others. 
+prev - uncrosses out the previous speaker. This seems to work as intended but is closely related to next so it might need to be tweaked once next is fixed. 
+
+switch - works as intended. We just need to ensure that all the speakers lists are operating independent of one another
+vote - This is unimplemented. This should just switch automatically to the voting speaers list
+
+
+
